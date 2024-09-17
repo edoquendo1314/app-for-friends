@@ -3,6 +3,7 @@
     "name": "oppo_v1",
     "slug": "oppo_v1",
     "version": "1.0.0",
+    "entryPoint": "./App.tsx",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
