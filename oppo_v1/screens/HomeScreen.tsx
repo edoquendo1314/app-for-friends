@@ -1,13 +1,20 @@
 import * as React from 'react';
-import { View, StyleSheet, Pressable } from 'react-native';
+import { View, StyleSheet} from 'react-native';
 import Button from '../components/Button';
 import TextButton from '../components/TextButton'
 
-export default function HomeScreen() {
+
+export default function HomeScreen({ navigation }) {
     return (
       <View style={styles.container}>
-        <Button title="Create Account" onPress= {() => console.log('Create Account Pressed!')} />
-        <TextButton title="Sign In" onPress={() => console.log('Sign In Pressed!')} />
+        <Button 
+            title="Create Account" 
+            onPress= {() => navigation.navigate('CreateAccount')} 
+        />
+        <TextButton 
+            title="Sign In" 
+            onPress={() => navigation.navigate('SignIn')} 
+        />
       </View>
     );
 };
