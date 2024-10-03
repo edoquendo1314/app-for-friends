@@ -16,7 +16,6 @@ interface CreateUserCredentials {
 export const signin = async (credentials: LoginCredentials) => {
     try{
         const response = await api.post('/login', credentials);
-        
         return response.data;
     }catch(error: unknown){
         console.error(`Error: ${error}`);
